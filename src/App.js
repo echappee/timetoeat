@@ -7,7 +7,7 @@ import { Recettes } from './Recettes';
 import { Voyages } from './Voyages';
 import { Chefs } from './Chefs';
 import { Modal } from './Modal';
-import { Admin } from './Admin';
+import { Admin } from './admin/Admin';
 
 
 

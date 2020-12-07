@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
-import { Switch } from 'react-router-dom';
 // CreationIngredient se trouve dans Admin dc ps besoin de le rajouter dans App.js
-import { CreationIngredient } from '../CreationIngredient';
-import { ListeIngredients } from '../ListeIngredients';
+import { CreationIngredient } from './CreationIngredient';
+import { ListeIngredients } from './ListeIngredients';
 
-import { ListeRecettes } from '../ListeRecettes';
-import { AjoutRecette } from '../AjoutRecette';
+import { ListeRecettes } from './ListeRecettes';
+import { AjoutRecette } from './AjoutRecette';
 
-import { AjoutVoyage } from '../AjoutVoyage';
-import { ListeVoyages } from '../ListeVoyages';
+import { AjoutVoyage } from './AjoutVoyage';
+import { ListeVoyages } from './ListeVoyages';
 
-import { AjoutChef } from '../AjoutChef';
+import { AjoutChef } from './AjoutChef';
 import { ListeChefs } from './ListeChefs';
 
 
