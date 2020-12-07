@@ -1,0 +1,13 @@
+.tales {
+    width: 40%;
+  }
+  .carousel-inner {
+    width:40%;
+    max-height: 600px !important;
+  }
+
+  .carousel-inner img {
+      height: 450px;
+  }
+
+  

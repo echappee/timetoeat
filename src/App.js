@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Header } from './Header';
+import { Home } from './Home';
+import { Reseaux } from './Reseaux';
+import { Recettes } from './Recettes';
+import { Voyages } from './Voyages';
+import { Chefs } from './Chefs';
+import { Modal } from './Modal';
+import { Admin } from './Admin';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Router>
+
+        <Header />
+        <Reseaux />
+        <Modal />
+
+        <div className="container"> 
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/recettes' component={Recettes} />
+            <Route path='/voyages' component={Voyages} />
+            <Route path='/chefs' component={Chefs} />
+            <Route path='/backend' component={Admin} />
+
+          </Switch>
+        </div>
+      </Router>
+
     </div>
   );
 }

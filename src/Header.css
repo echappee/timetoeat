@@ -1,0 +1,50 @@
+
+ header{
+    background-color: black;
+ }
+ #burger i {
+   color: #ffffff;
+   font-size: 35px;
+}
+ .h1{ 
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+    
+}
+ .underscore{
+   width: 35px;
+   border-bottom: 2px solid white
+}
+.loupe {
+    color: white;
+}
+
+#sideBar{
+   position: fixed;
+   z-index: 1;
+   width: 200px;
+   height: 100%;
+   background-color: rgb(225, 252, 74);
+   transform: translate(-255px, 0);
+   transition: transform 400ms;
+}
+#sideBar.open{
+   transform: translate(0,0)
+}
+
+#sideBar a{
+   color: black;
+   text-decoration: none;
+   font-size: 25px;
+   padding-top: 40px;
+   display: block;
+   padding-left: 20px;
+
+}
+
+.clear {
+   position: absolute;
+   top: 15px;
+   right: 20px;
+}
